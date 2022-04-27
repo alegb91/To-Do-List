@@ -60,7 +60,7 @@ let toDoList = ()=> {
 };
 
 
-boton.addEventListener('click', ()=> toDoList());
+boton.addEventListener('click', ()=> inputTarea.value === "" ? alert("Debes agregar una tarea") : toDoList());
 
 
 
