@@ -38,7 +38,9 @@ let mostrarLista = ()=> {
 
     listaDeTareas.map(obj => {
         let item = document.createElement("li")
-        item.innerText = `${obj.nombre} ${obj.prioridad}`;
+        item.innerText = obj.prioridad == "Prioridad" 
+        ? `${obj.nombre} - Selecciona una prioridad` 
+        : `${obj.nombre} - ${obj.prioridad}`;
         ul.appendChild(item)
         item.addEventListener("click", ()=> {
             eliminar(item, obj)
