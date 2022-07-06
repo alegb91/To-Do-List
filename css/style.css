@@ -5,12 +5,36 @@ body {
 	animation: gradient 15s ease infinite;
 }
 
-.btn-violet{
-    background-color: rgb(165, 19, 165);
-    color: white;
-    font-weight: 900;
-    /* border-color: rgb(201, 201, 201); */
+li {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
 }
+
+.deleteButton {
+	background-color: transparent;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.deleteButton:hover {
+	color: red;
+}
+
+ul {
+	cursor: pointer;
+}
+
+.btn-violet{
+    background-color: white;
+    color: black;
+    font-weight: 900;
+	opacity: 0.8;
+}
+
+
 
 @keyframes gradient {
 	0% {
@@ -23,3 +47,72 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+#task {
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+}
+
+#subtask {
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+	margin-top: 5px;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+}
+#subTaskButton {
+	opacity: 0.8;
+	color: black;
+	background-color: transparent;
+	border: none;
+	font-size: 25px;
+}
+
+#subTaskButton:hover {
+	color: green;
+}
+
+#prioridad {
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+}
+
+ul {
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+	padding: 50px;
+	border-radius: 10px;
+}
+
+#lista-de-tareas{
+	font-size: 17px;
+}
+
+.active-item {
+	color: rgb(0, 255, 17);
+}
+
+#container-subtareas {
+    display: flex;
+}
+
+.subTaskTitle {
+	color: black;
+	opacity: 0.8;
+}
+
+.subTaskDelete{
+	background-color: transparent;
+	color: white;
+	border: none;
+}
+
+.subTaskDelete:hover {
+	color: red;
+}
+
